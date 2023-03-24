@@ -2,6 +2,8 @@ package com.urise.webapp.storage;
 
 import com.urise.webapp.model.Resume;
 
+import java.util.List;
+
 public interface Storage {
 
     void clear();
@@ -14,8 +16,8 @@ public interface Storage {
 
     void delete(String uuid);
 
-    Resume[] getAll();
-
     int size();
+
+    List<Resume> getAllSorted();
 }
 
