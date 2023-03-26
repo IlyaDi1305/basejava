@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MapStorageUuid extends AbstractStorage {
-    final private Map<String, Resume> map = new HashMap<>();
+public class MapUuidStorage extends AbstractStorage {
+    private final Map<String, Resume> map = new HashMap<>();
 
     @Override
     protected String getIndex(String uuid) {
